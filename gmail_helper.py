@@ -20,7 +20,7 @@ class simple_gmail_mailer():
         server.set_debuglevel(0)
         server.ehlo()
         server.starttls()
-        server.login(self.gmail_username, self.gmail_password)
+        server.login(self.gmailUsername, self.gmailPassword)
         server.sendmail(self.fromAddress, toAddresses , msg)
         server.quit()
         return(True)
