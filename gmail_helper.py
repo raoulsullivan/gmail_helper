@@ -1,3 +1,5 @@
+import smtplib
+
 class simple_gmail_mailer():
     def __init__(self,gmailUsername, gmailPassword, fromAddress='reporting@fundingoptions.com',toAddresses=[]):
         if (not gmailUsername) or (not gmailPassword):
